@@ -60,28 +60,28 @@ export function Results() {
   const scoreCards = [
     {
       title: 'Consistency',
-      score: scores.Consistency,
+      score: scores.Consistency*99,
       icon: CheckCircle2,
       color: 'text-emerald-500',
       delay: 0.2
     },
     {
       title: 'Fluency',
-      score: scores.Fluency,
+      score: scores.Fluency*99,
       icon: Zap,
       color: 'text-blue-500',
       delay: 0.4
     },
     {
       title: 'Relevance',
-      score: scores.Relevance,
+      score: scores.Relevance*99,
       icon: Target,
       color: 'text-purple-500',
       delay: 0.6
     },
     {
       title: 'Coherence',
-      score: scores.Coherence,
+      score: scores.Coherence*99,
       icon: Brain,
       color: 'text-amber-500',
       delay: 0.8
