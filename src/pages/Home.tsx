@@ -6,7 +6,7 @@ import { Textarea } from '../components/ui/textarea'
 import { Loader2 } from 'lucide-react'
 import axios from 'axios'
 import HomeSkeleton from '../components/HomeSkeleton'
-import LoadingAnimation from '../components/LoadingAnimation'
+import {LoadingAnimation} from '../components/LoadingAnimation'
 
 
 
