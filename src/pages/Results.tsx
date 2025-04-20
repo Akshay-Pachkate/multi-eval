@@ -88,7 +88,6 @@ export function Results() {
     }
   ]
 
-  const averageScore = Object.values(scores).reduce((a, b) => a + b, 0) / 4
 
   return (
     <motion.div
@@ -97,17 +96,7 @@ export function Results() {
       exit={{ opacity: 0 }}
       className="max-w-6xl mx-auto py-12"
     >
-      <motion.div
-        initial={{ y: -20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        className="text-center mb-12"
-      >
-        <h2 className="text-3xl font-bold gradient-text mb-4">Evaluation Results</h2>
-        <p className="text-gray-600">
-          Overall Score: <span className="font-semibold">{averageScore.toFixed(2)}%</span>
-        </p>
-      </motion.div>
-
+      
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
         {scoreCards.map((card) => (
           <ScoreCard key={card.title} {...card} />
